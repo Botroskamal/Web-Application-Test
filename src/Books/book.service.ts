@@ -28,7 +28,7 @@ export class BookService {
     }
 
     private findByPublisher(publisher: string): Book[] {
-        const BooksByPublisher = this.books.filter(book => book.getPublicher() === publisher);
+        const BooksByPublisher = this.books.filter(book => book.getPublisher() === publisher);
         if(!BooksByPublisher) {
             throw new NotFoundException('Could not find product.');
         }

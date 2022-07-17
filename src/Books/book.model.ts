@@ -3,7 +3,7 @@ export class Book {
     private ISNB: Number;
     private Author: string;
     private year: Number;
-    private publicher: string;
+    private publisher: string;
     private category: string;
 
     constructor(Name: string, ISBN: Number, Author: string, year: Number, publicher: string, category: string) {
@@ -11,7 +11,7 @@ export class Book {
         this.ISNB = ISBN;
         this.Author = Author;
         this.year = year;
-        this.publicher = publicher;
+        this.publisher = publicher;
         this.category = category;
     }
 
@@ -22,6 +22,6 @@ export class Book {
     public getISNB(): Number { return this.ISNB; }
     public getAuthor(): string { return this.Author; }
     public getYear(): Number { return this.year; }
-    public getPublicher(): string { return this.publicher; }
+    public getPublisher(): string { return this.publisher; }
     public getCategory(): string { return this.category; }
 }
